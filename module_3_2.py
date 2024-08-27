@@ -1,6 +1,6 @@
 def send_email(message, recipient, *, sender='university.help@gmail.com'):
     if "@" in recipient and "@" in sender:
-        variants = ('com', '.ru', '.net')
+        variants = ('.com', '.ru', '.net')
         if recipient.endswith(variants) and sender.endswith(variants):
             if sender == 'university.help@gmail.com':
                 print(f'Письмо успешно отправлено с адреса {sender} на адрес {recipient}.')
